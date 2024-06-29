@@ -13,9 +13,13 @@
 		3EF3DFD32C1F6C7E0022B3AB /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 3EF3DFD22C1F6C7E0022B3AB /* Base */; };
 		3EF3DFD52C1F6C7F0022B3AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EF3DFD42C1F6C7F0022B3AB /* Assets.xcassets */; };
 		3EF3DFD82C1F6C7F0022B3AB /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 3EF3DFD72C1F6C7F0022B3AB /* Base */; };
+		3EF3DFE02C1F752E0022B3AB /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EF3DFDF2C1F752E0022B3AB /* CoreData.framework */; };
+		3EF3DFE32C1F75710022B3AB /* Reciplease.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3EF3DFE12C1F75710022B3AB /* Reciplease.xcdatamodeld */; };
+		F16AF6245D71A71CEC942E74 /* Pods_Reciplease.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 864D4C122C7AA8BB1C69C5A0 /* Pods_Reciplease.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		04ADEEDED4FB3AB64ADDEB2D /* Pods-Reciplease.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reciplease.debug.xcconfig"; path = "Target Support Files/Pods-Reciplease/Pods-Reciplease.debug.xcconfig"; sourceTree = "<group>"; };
 		3EF3DFC82C1F6C7E0022B3AB /* Reciplease.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reciplease.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EF3DFCB2C1F6C7E0022B3AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3EF3DFCD2C1F6C7E0022B3AB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +28,10 @@
 		3EF3DFD42C1F6C7F0022B3AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3EF3DFD72C1F6C7F0022B3AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3EF3DFD92C1F6C7F0022B3AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3EF3DFDF2C1F752E0022B3AB /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		3EF3DFE22C1F75710022B3AB /* Reciplease.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Reciplease.xcdatamodel; sourceTree = "<group>"; };
+		864D4C122C7AA8BB1C69C5A0 /* Pods_Reciplease.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Reciplease.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF30899006D745525762871A /* Pods-Reciplease.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reciplease.release.xcconfig"; path = "Target Support Files/Pods-Reciplease/Pods-Reciplease.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +39,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3EF3DFE02C1F752E0022B3AB /* CoreData.framework in Frameworks */,
+				F16AF6245D71A71CEC942E74 /* Pods_Reciplease.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +52,8 @@
 			children = (
 				3EF3DFCA2C1F6C7E0022B3AB /* Reciplease */,
 				3EF3DFC92C1F6C7E0022B3AB /* Products */,
+				E881B318245DD51EB4F390E4 /* Pods */,
+				46BDB02BEC4EB4B76CDB65B5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,8 +75,27 @@
 				3EF3DFD42C1F6C7F0022B3AB /* Assets.xcassets */,
 				3EF3DFD62C1F6C7F0022B3AB /* LaunchScreen.storyboard */,
 				3EF3DFD92C1F6C7F0022B3AB /* Info.plist */,
+				3EF3DFE12C1F75710022B3AB /* Reciplease.xcdatamodeld */,
 			);
 			path = Reciplease;
+			sourceTree = "<group>";
+		};
+		46BDB02BEC4EB4B76CDB65B5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3EF3DFDF2C1F752E0022B3AB /* CoreData.framework */,
+				864D4C122C7AA8BB1C69C5A0 /* Pods_Reciplease.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E881B318245DD51EB4F390E4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				04ADEEDED4FB3AB64ADDEB2D /* Pods-Reciplease.debug.xcconfig */,
+				BF30899006D745525762871A /* Pods-Reciplease.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +105,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3EF3DFDC2C1F6C7F0022B3AB /* Build configuration list for PBXNativeTarget "Reciplease" */;
 			buildPhases = (
+				8A07DB4481101100D292D078 /* [CP] Check Pods Manifest.lock */,
 				3EF3DFC42C1F6C7E0022B3AB /* Sources */,
 				3EF3DFC52C1F6C7E0022B3AB /* Frameworks */,
 				3EF3DFC62C1F6C7E0022B3AB /* Resources */,
+				94BE4E0925D00B4ED2550BE6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,11 +166,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8A07DB4481101100D292D078 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Reciplease-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		94BE4E0925D00B4ED2550BE6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Reciplease/Pods-Reciplease-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Reciplease/Pods-Reciplease-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Reciplease/Pods-Reciplease-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3EF3DFC42C1F6C7E0022B3AB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3EF3DFE32C1F75710022B3AB /* Reciplease.xcdatamodeld in Sources */,
 				3EF3DFD02C1F6C7E0022B3AB /* ViewController.swift in Sources */,
 				3EF3DFCC2C1F6C7E0022B3AB /* AppDelegate.swift in Sources */,
 				3EF3DFCE2C1F6C7E0022B3AB /* SceneDelegate.swift in Sources */,
@@ -287,6 +363,7 @@
 		};
 		3EF3DFDD2C1F6C7F0022B3AB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04ADEEDED4FB3AB64ADDEB2D /* Pods-Reciplease.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -315,6 +392,7 @@
 		};
 		3EF3DFDE2C1F6C7F0022B3AB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF30899006D745525762871A /* Pods-Reciplease.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -363,6 +441,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3EF3DFE12C1F75710022B3AB /* Reciplease.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3EF3DFE22C1F75710022B3AB /* Reciplease.xcdatamodel */,
+			);
+			currentVersion = 3EF3DFE22C1F75710022B3AB /* Reciplease.xcdatamodel */;
+			name = Reciplease.xcdatamodeld;
+			path = /Users/younesouasmi/Documents/dev/openclassrooms/openclassroom/projet10/Reciplease/Reciplease/Reciplease.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 3EF3DFC02C1F6C7E0022B3AB /* Project object */;
 }
